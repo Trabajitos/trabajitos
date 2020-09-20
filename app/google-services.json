@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "658853065479",
+    "firebase_url": "https://trabajitos-ff06f.firebaseio.com",
+    "project_id": "trabajitos-ff06f",
+    "storage_bucket": "trabajitos-ff06f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658853065479:android:020dc780361b41492b8ba2",
+        "android_client_info": {
+          "package_name": "cl.trabajitos.intentodelogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658853065479-89a6ed3o357uimje486j8mbor4pcgtvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIjyW1HlMN-TJME4-3UYI7-6DvSio3rSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658853065479-89a6ed3o357uimje486j8mbor4pcgtvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
