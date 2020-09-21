@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:text="¡Selecciona Foto de Perfil!"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="¡Áreas de desempeño!"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Switch
+            android:id="@+id/AseoSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aseo" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/finanzaSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asesoría Financiera" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/cocinaSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cocina y Gastronomía" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/mascotasSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuidado de Mascotas" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/decoracionSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decoración" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/educacionSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Educación" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/entrenamientoSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrenamiento Físico" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/entretenimientoSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entretenimiento" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/eventosSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eventos y Banquetería" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/gasfiteriaSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasfitería" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/jardineriaSwtich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jardinería" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/peluqueriaSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peluquería y Estética" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/saludSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salud y Cuidados" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/informaticosSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicios Informáticos" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/tramitesSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trámites Sociales" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Switch
+            android:id="@+id/transporteSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transporte" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

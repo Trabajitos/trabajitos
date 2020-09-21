@@ -1,5 +1,6 @@
 package cl.trabajitos.intentodelogin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -31,6 +32,14 @@ class SignUpActivity : AppCompatActivity() {
                 contactInfoLayout.visibility = View.VISIBLE
                 pageTextView.setText("2 de 3")
 
+            }
+            if (emailEditText.text.isNotEmpty() &&
+                phoneEditText.text.isNotEmpty() &&
+                passwordEditText.text.isNotEmpty() &&
+                confirmPasswordEditText.text.isNotEmpty()
+            ) {
+            val intentCreateUser : Intent = Intent(this,CreateUserActivity::class.java)
+                startActivity(intentCreateUser)
             }
 
         }
