@@ -60,7 +60,7 @@
             android:clickable="true"
             android:text="¿Olvidaste tu contraseña?"
             android:textAlignment="center"
-            android:textColor="#FFA000"
+            android:textColor="#000000"
             android:textColorHighlight="#F57C00"
             android:textColorLink="#E64A19" />
 
@@ -93,19 +93,16 @@
                 android:text="¿Nuevo en trabajitos?"
                 android:textAlignment="viewEnd" />
 
-            <TextView
-                android:id="@+id/signUpTextView"
+            <Button
+                android:id="@+id/sUpButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:singleLine="false"
-                android:text="¡REGISTRATE!"
-                android:textAlignment="center"
+                android:background="#00FFFFFF"
+                android:text="¡REGÍSTRATE!"
                 android:textColor="#F57C00"
-                android:textColorHighlight="#FFA000"
-                android:textColorLink="#E64A19"
-                android:textIsSelectable="false" />
+                android:textSize="18sp" />
+
         </LinearLayout>
 
     </LinearLayout>

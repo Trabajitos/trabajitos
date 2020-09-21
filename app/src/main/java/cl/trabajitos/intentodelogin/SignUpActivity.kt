@@ -8,7 +8,13 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
+        setup()
     }
 
+    private fun setup() {
 
+        backButton.setOnClickListener{
+            onBackPressed()
+        }
+    }
 }

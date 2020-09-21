@@ -29,6 +29,10 @@ class AuthActivity : AppCompatActivity() {
             }
 
         }
+        sUpButton.setOnClickListener{
+            val signUpIntent :Intent = Intent(this,SignUpActivity::class.java)
+            startActivity(signUpIntent)
+        }
 
     }
 
