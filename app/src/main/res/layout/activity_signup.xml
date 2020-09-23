@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -28,7 +30,7 @@
             android:textSize="8sp" />
 
         <Space
-            android:layout_width="80dp"
+            android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
@@ -42,31 +44,55 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/personalInfoLayout"
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
-        android:layout_weight="3"
+        android:layout_weight="1"
         android:orientation="vertical"
-        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tittleLayout">
 
         <TextView
-            android:id="@+id/personalDataTextView"
+            android:id="@+id/titleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Datos Personales"
-            android:textAlignment="center "
-            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="Datos"
+            android:textAlignment="center"
             android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personales"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalInfoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:backgroundTint="#F57C00"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="20dp" />
 
         <EditText
             android:id="@+id/nameEditText"
@@ -111,10 +137,14 @@
             android:layout_height="20dp" />
 
         <Spinner
-            android:id="@+id/genderSpinner"
+            android:id="@+id/nacionalitySpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#FFA000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
     </LinearLayout>
 
@@ -123,29 +153,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:backgroundTint="#F57C00"
         android:orientation="vertical"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tittleLayout">
-
-        <TextView
-            android:id="@+id/contactDataTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Datos de Contacto"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+        app:layout_constraintTop_toTopOf="@+id/personalInfoLayout">
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="20dp" />
 
         <EditText
             android:id="@+id/emailEditText"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#F57C00"
             android:ems="10"
@@ -159,7 +183,7 @@
 
         <EditText
             android:id="@+id/phoneEditText"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#F57C00"
             android:ems="10"
@@ -173,11 +197,10 @@
 
         <EditText
             android:id="@+id/passwordEditText"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#F57C00"
             android:ems="10"
-            android:foregroundTint="#FFFFFF"
             android:gravity="center_horizontal"
             android:hint="Contraseña"
             android:inputType="textPassword" />
@@ -188,13 +211,17 @@
 
         <EditText
             android:id="@+id/confirmPasswordEditText"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#F57C00"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Confirme Contraseña"
             android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
     </LinearLayout>
 
@@ -210,12 +237,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <Button
+            android:id="@+id/backSignUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_rew"
+            android:backgroundTint="#636363" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <TextView
             android:id="@+id/pageTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1 de 3" />
+            android:text="1 de 2" />
 
         <Space
             android:layout_width="20dp"
@@ -227,8 +267,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:drawable/ic_media_play"
+            android:background="@android:drawable/ic_media_ff"
             android:backgroundTint="#F57C00" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
