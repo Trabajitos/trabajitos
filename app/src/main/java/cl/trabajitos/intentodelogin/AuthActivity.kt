@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_auth.*
 
 class AuthActivity : AppCompatActivity() {
@@ -24,6 +25,7 @@ class AuthActivity : AppCompatActivity() {
                     passwordEditText.text.toString()).addOnCompleteListener{
                     if(it.isSuccessful){
                 showHome(it.result?.user?.email?:" ", ProviderType.BASIC)
+                        val db = FirebaseFirestore.getInstance()
                     }
                 }
             }
