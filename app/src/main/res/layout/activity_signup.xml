@@ -10,7 +10,7 @@
         android:id="@+id/tittleLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:orientation="horizontal"
@@ -18,27 +18,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:drawable/ic_menu_close_clear_cancel"
-            android:backgroundTint="@color/colorAccent"
-            android:minWidth="10dp"
-            android:minHeight="10dp"
-            android:textSize="8sp" />
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/close" />
 
         <Space
-            android:layout_width="15dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="230dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:contentDescription="logo tranajitos"
             app:srcCompat="@drawable/logotipo" />
 
     </LinearLayout>
@@ -48,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
         android:layout_weight="1"
         android:orientation="vertical"
@@ -64,6 +62,7 @@
             android:singleLine="false"
             android:text="Datos"
             android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="30sp" />
 
         <TextView
@@ -72,6 +71,7 @@
             android:layout_height="wrap_content"
             android:text="Personales"
             android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="36sp" />
     </LinearLayout>
 
@@ -82,8 +82,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/common_google_signin_btn_text_dark_disabled"
-        android:backgroundTint="#F57C00"
+        android:background="@drawable/roundborderwhite"
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +97,7 @@
             android:id="@+id/nameEditText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Nombres"
@@ -112,7 +111,7 @@
             android:id="@+id/lastNameEditText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Apellidos"
@@ -126,7 +125,7 @@
             android:id="@+id/birthEditTextDate"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Fecha de Nacimiento"
@@ -140,7 +139,7 @@
             android:id="@+id/nacionalitySpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FFA000" />
+            android:backgroundTint="@color/colorAccent" />
 
         <Space
             android:layout_width="match_parent"
@@ -155,8 +154,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/common_google_signin_btn_text_dark_disabled"
-        android:backgroundTint="#F57C00"
+        android:background="@drawable/roundborderwhite"
         android:orientation="vertical"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,7 +169,7 @@
             android:id="@+id/emailEditText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Correo Electronico"
@@ -185,7 +183,7 @@
             android:id="@+id/phoneEditText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Numero de Teléfono"
@@ -199,7 +197,7 @@
             android:id="@+id/passwordEditText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Contraseña"
@@ -213,7 +211,7 @@
             android:id="@+id/confirmPasswordEditText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Confirme Contraseña"
@@ -242,11 +240,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:drawable/ic_media_rew"
-            android:backgroundTint="#636363" />
+            android:background="@drawable/outback"
+            android:visibility="invisible" />
 
         <Space
-            android:layout_width="20dp"
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
@@ -258,7 +256,7 @@
             android:text="1 de 2" />
 
         <Space
-            android:layout_width="20dp"
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
@@ -267,8 +265,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:drawable/ic_media_ff"
-            android:backgroundTint="#F57C00" />
+            android:background="@drawable/outnext" />
 
     </LinearLayout>
 

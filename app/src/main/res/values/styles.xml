@@ -11,4 +11,5 @@
         <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 
+
 </resources>

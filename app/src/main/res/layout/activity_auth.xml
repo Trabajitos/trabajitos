@@ -31,7 +31,7 @@
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:hint="Correo Electronico"
             android:inputType="textEmailAddress" />
@@ -44,7 +44,7 @@
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F57C00"
+            android:backgroundTint="@color/colorAccent"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword" />
@@ -60,7 +60,7 @@
             android:clickable="true"
             android:text="¿Olvidaste tu contraseña?"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/colorAccent"
             android:textColorHighlight="#F57C00"
             android:textColorLink="#E64A19" />
 
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#F57C00"
+            android:background="@drawable/roundborder"
             android:text="Ingresar" />
 
         <Space
