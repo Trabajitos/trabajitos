@@ -7,6 +7,7 @@
     tools:context=".AuthActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -76,34 +77,36 @@
             android:background="@drawable/roundborder"
             android:text="Ingresar" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="80dp" />
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-            <TextView
-                android:id="@+id/NewTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="¿Nuevo en trabajitos?"
-                android:textAlignment="viewEnd" />
+        <TextView
+            android:id="@+id/NewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="¿Nuevo en trabajitos?"
+            android:textAlignment="viewEnd" />
 
-            <Button
-                android:id="@+id/sUpButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="¡REGÍSTRATE!"
-                android:textColor="#F57C00"
-                android:textSize="18sp" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/sUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:text="¡REGÍSTRATE!"
+            android:textColor="#F57C00"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

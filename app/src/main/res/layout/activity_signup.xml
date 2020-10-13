@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:layout_weight="1"
         android:orientation="vertical"
@@ -136,10 +136,12 @@
             android:layout_height="20dp" />
 
         <Spinner
-            android:id="@+id/nacionalitySpinner"
+            android:id="@+id/countrySpinner"
             android:layout_width="match_parent"
+            android:spinnerMode="dialog"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent" />
+            android:backgroundTint="@color/colorAccent"
+            android:textAlignment="center" />
 
         <Space
             android:layout_width="match_parent"
@@ -159,7 +161,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/personalInfoLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Space
             android:layout_width="match_parent"
@@ -229,7 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="60dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
