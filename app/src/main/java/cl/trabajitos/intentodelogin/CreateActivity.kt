@@ -1,5 +1,6 @@
 package cl.trabajitos.intentodelogin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,7 +13,7 @@ class CreateActivity : AppCompatActivity() {
         setUp()
     }
 
-    private fun setUp(){
+    private fun setUp() {
         nextWorkButton.setOnClickListener {
             firstLayout.visibility = View.GONE
             secondLayout.visibility = View.VISIBLE
@@ -22,4 +23,5 @@ class CreateActivity : AppCompatActivity() {
             secondLayout.visibility = View.GONE
         }
     }
+
 }

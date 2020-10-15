@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Intento de login</string>
-    <string name="selected_country">Pais Seleccionado: </string>
-    <string-array name="Countries">
-        <item>Seleccione su nacionalidad</item>
+    <string name="select_country">Seleccione un País </string>
+    <string-array name="countries">
+        <item>Ninguno</item>
         <item>Afganistán</item>
         <item>Albania</item>
         <item>Argelia</item>

@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_signup.*
 
@@ -20,7 +19,6 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
         setup()
-
     }
 
     private fun setup() {
@@ -41,6 +39,8 @@ class SignUpActivity : AppCompatActivity() {
                     hashMapOf(
                         "name" to nameEditText.text.toString(),
                         "lastName" to lastNameEditText.text.toString(),
+                        "country" to countrySpinner.selectedItem.toString(),
+                        "birth" to birthEditTextDate.text.toString(),
                         "phone" to phoneEditText.text.toString(),
                         "password" to passwordEditText.text.toString()
                     )
@@ -58,7 +58,7 @@ class SignUpActivity : AppCompatActivity() {
                 backSignUpButton.visibility = View.INVISIBLE
             }
         }
-        val countries = resources.getStringArray(R.array.Countries)
+        val countries = resources.getStringArray(R.array.countries)
 
         val spinner = findViewById<Spinner>(R.id.countrySpinner)
         if (spinner != null) {
