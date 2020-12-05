@@ -41,15 +41,12 @@
         <item>Canadá</item>
         <item>Cabo Verde</item>
         <item>Islas Caimán</item>
-        <item>República Centroafricana</item>
         <item>Chad</item>
         <item>Chile</item>
         <item>China</item>
-        <item>Isla de Navidad, Isla Christmas</item>
         <item>Islas Cocos</item>
         <item>Colombia</item>
         <item>Comores</item>
-        <item>República Democrática del Congo</item>
         <item>República del Congo</item>
         <item>Islas Cook</item>
         <item>Costa Rica</item>
@@ -61,7 +58,7 @@
         <item>Dinamarca</item>
         <item>Djibouti, Yibuti</item>
         <item>Dominica</item>
-        <item>Dominicana, República</item>
+        <item>Dominicana</item>
         <item>Timor Oriental</item>
         <item>Ecuador</item>
         <item>Egipto</item>
@@ -77,7 +74,6 @@
         <item>Francia</item>
         <item>Guayana Francesa</item>
         <item>Polinesia Francesa</item>
-        <item>Tierras Australes y Antárticas Francesas</item>
         <item>Gabón</item>
         <item>Gambia</item>
         <item>Georgia</item>
@@ -116,7 +112,7 @@
         <item>Kosovo</item>
         <item>Kuwait</item>
         <item>Kirguistán</item>
-        <item>Laos; oficialmente: República Democrática Popular Lao</item>
+        <item>Laos</item>
         <item>Letonia</item>
         <item>Líbano</item>
         <item>Lesotho</item>
@@ -139,7 +135,7 @@
         <item>Mauricio</item>
         <item>Mayotte</item>
         <item>México</item>
-        <item>Micronesia, Estados Federados de</item>
+        <item>Micronesia</item>
         <item>Moldavia</item>
         <item>Mónaco</item>
         <item>Mongolia</item>
@@ -147,11 +143,11 @@
         <item>Montserrat</item>
         <item>Marruecos</item>
         <item>Mozambique</item>
-        <item>Myanmar, Birmania</item>
+        <item>Birmania</item>
         <item>Namibia</item>
         <item>Nauru</item>
         <item>Nepal</item>
-        <item>Países Bajos, Holanda</item>
+        <item>Holanda</item>
         <item>Antillas Holandesas</item>
         <item>Nueva Caledonia</item>
         <item>Nueva Zelanda</item>
@@ -159,12 +155,10 @@
         <item>Niger</item>
         <item>Nigeria</item>
         <item>Niue</item>
-        <item>Marianas del Norte</item>
         <item>Noruega</item>
         <item>Omán</item>
         <item>Pakistán</item>
         <item>Palau</item>
-        <item>Territorios Palestinos</item>
         <item>Panamá</item>
         <item>Papúa-Nueva Guinea</item>
         <item>Paraguay</item>
@@ -179,12 +173,9 @@
         <item>Rumanía</item>
         <item>Federación Rusa</item>
         <item>Ruanda</item>
-        <item>San Cristobal y Nevis</item>
         <item>Santa Lucía</item>
-        <item>San Vincente y Granadinas</item>
         <item>Samoa</item>
         <item>San Marino</item>
-        <item>Santo Tomé y Príncipe</item>
         <item>Arabia Saudita</item>
         <item>Senegal</item>
         <item>Serbia</item>
@@ -205,7 +196,7 @@
         <item>Suecia</item>
         <item>Suiza</item>
         <item>Siria</item>
-        <item>Taiwán (República de China)</item>
+        <item>Taiwán</item>
         <item>Tadjikistan</item>
         <item>Tanzania</item>
         <item>Tailandia</item>
@@ -218,23 +209,17 @@
         <item>Túnez</item>
         <item>Turquía</item>
         <item>Turkmenistan</item>
-        <item>Islas Turcas y Caicos</item>
         <item>Tuvalu</item>
         <item>Uganda</item>
         <item>Ucrania</item>
-        <item>Emiratos Árabes Unidos</item>
+        <item>Emiratos Árabes</item>
         <item>Reino Unido</item>
         <item>Estados Unidos</item>
         <item>Uruguay</item>
         <item>Uzbekistán</item>
         <item>Vanuatu</item>
-        <item>Ciudad del Vaticano</item>
         <item>Venezuela</item>
         <item>Vietnam</item>
-        <item>Islas Virgenes Británicas</item>
-        <item>Islas Virgenes Americanas</item>
-        <item>Wallis y Futuna</item>
-        <item>Sáhara Occidental</item>
         <item>Yemen</item>
         <item>Zambia</item>
         <item>Zimbabwe</item>

@@ -4,6 +4,5 @@
     <item>
         <bitmap android:src="@drawable/logotipo"
                 android:gravity="center"/>
-
     </item>
 </layer-list>
