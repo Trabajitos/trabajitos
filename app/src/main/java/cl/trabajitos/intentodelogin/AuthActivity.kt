@@ -21,18 +21,22 @@ class AuthActivity : AppCompatActivity() {
     private fun setup() {
 
         logInButton.setOnClickListener {
-            FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                emailEditText.text.toString(), passwordEditText.text.toString()
-            ).addOnCompleteListener{
-                if(it.isSuccessful){
-                    Toast.makeText(this,"supongamos que ingresamos",Toast.LENGTH_LONG).show()
-                }
-            }
+           // FirebaseAuth.getInstance().signInWithEmailAndPassword(
+           //     emailEditText.text.toString(), passwordEditText.text.toString()
+          //  ).addOnCompleteListener{
+          //      if(it.isSuccessful){
+           //         Toast.makeText(this,"supongamos que ingresamos",Toast.LENGTH_LONG).show()
+           //     }
+           // }
+            val start :Intent = Intent(this,MapActivity::class.java)
+            startActivity(start)
+            finish()
         }
 
         sUpButton.setOnClickListener{
             val signUpIntent :Intent = Intent(this,SignUpActivity::class.java)
             startActivity(signUpIntent)
+            finish()
         }
 
     }

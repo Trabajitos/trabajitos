@@ -223,6 +223,7 @@
         <item>Yemen</item>
         <item>Zambia</item>
         <item>Zimbabwe</item>
-  </string-array>
+    </string-array>
+    <string name="title_activity_map">Map</string>
 
 </resources>

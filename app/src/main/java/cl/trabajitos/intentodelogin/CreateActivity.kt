@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_create.*
+import kotlinx.android.synthetic.main.activity_signup.*
 
 class CreateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,11 @@ class CreateActivity : AppCompatActivity() {
         backWorkButton.setOnClickListener {
             firstLayout.visibility = View.VISIBLE
             secondLayout.visibility = View.GONE
+        }
+        nextButton.setOnClickListener{
+            val start :Intent = Intent(this,MapActivity::class.java)
+            startActivity(start)
+            finish()
         }
     }
 
