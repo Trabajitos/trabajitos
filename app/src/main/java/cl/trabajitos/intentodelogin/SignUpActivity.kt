@@ -99,6 +99,9 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun register() {
+        if(phoneEditText.text != null && emailEditText.text != null){
+
+
         if(emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(
                 emailEditText.text.toString(),
@@ -117,6 +120,6 @@ class SignUpActivity : AppCompatActivity() {
 
 
     }
-
+    }
 
 }
